@@ -1,0 +1,68 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36ee9e",
+        "collegeName": "Notre Dem College",
+        "collegeImg": "https://th.bing.com/th/id/R.2bacf0a9d6a5f0f656d4143c3a7ab30d?rik=M36%2b8VeQshYb3g&pid=ImgRaw&r=0",
+        "admissionDate": "14 June 2023",
+        "events": "Host a music concert A free music concert is something most people will enjoy!",
+        "reserchHistory": "Levine, one of the principal investigators of a new Stanford Changing Human Experience grant, “Recovering the University as a Public Good,” also shared some of the lessons the institution’s history offers",
+        "reserchWorks": [
+           ["Memorial Sloan Kettering Human Oncology and Pathogenesis Program"],
+            ["Rockefeller University Summer Science Research Program"],
+            ["Research Science Institute (RSI)"],
+            ["NYU Tandon – Applied Research Innovations in Science and Engineering (ARISE)"],
+            ["Stony Brook University – Simons Summer Research Program"]
+        ],
+        "sports": "NCAA.com features live video, live scoring, rankings, news and statistics for all college sports across all divisions in the NCAA.",
+        "rating": 4.5,
+        "numOfReserch": 5,
+        "category" : "popular",
+        "research" : "Research and Thesis Papers",
+        "event" : "College event information",
+        "sport" : "Sports Club & Activity"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eea6",
+        "collegeName": "Dhaka College",
+        "collegeImg": "https://th.bing.com/th/id/OIP.ofN8Gxvg-z6hy4jrEpqJdgAAAA?pid=ImgDet&rs=1",
+        "admissionDate": "28 June 2023",
+        "events": "Host a music concert A free music concert is something most people will enjoy!",
+        "reserchHistory": "Levine, one of the principal investigators of a new Stanford Changing Human Experience grant, “Recovering the University as a Public Good,” also shared some of the lessons the institution’s history offers",
+        "reserchWorks": [
+            "Memorial Sloan Kettering Human Oncology and Pathogenesis Program",
+            "Rockefeller University Summer Science Research Program",
+            "Research Science Institute (RSI)",
+            "NYU Tandon – Applied Research Innovations in Science and Engineering (ARISE)",
+            "Stony Brook University – Simons Summer Research Program"
+        ],
+        "sports": "NCAA.com features live video, live scoring, rankings, news and statistics for all college sports across all divisions in the NCAA.",
+        "rating": 5,
+        "numOfReserch": 4,
+        "category" : "popular",
+        "research" : "Research and Thesis Papers",
+        "event" : "College event information",
+        "sport" : "Sports Club & Activity"
+    },
+    {
+        "_id": "642c155b2c4774f05c36eeaf",
+        "collegeName": "Bangla College",
+        "collegeImg": "https://th.bing.com/th/id/OIP.RFGswpVg7V_LTszXj5b2eAHaEK?pid=ImgDet&rs=1",
+        "admissionDate": "14 June 2023",
+        "events": "Host a music concert A free music concert is something most people will enjoy!",
+        "reserchHistory": "Levine, one of the principal investigators of a new Stanford Changing Human Experience grant, “Recovering the University as a Public Good,” also shared some of the lessons the institution’s history offers",
+        "reserchWorks": [
+            "Memorial Sloan Kettering Human Oncology and Pathogenesis Program",
+            "Rockefeller University Summer Science Research Program",
+            "Research Science Institute (RSI)",
+            "NYU Tandon – Applied Research Innovations in Science and Engineering (ARISE)",
+            "Stony Brook University – Simons Summer Research Program"
+        ],
+        "sports": "NCAA.com features live video, live scoring, rankings, news and statistics for all college sports across all divisions in the NCAA.",
+        "rating": 4,
+        "numOfReserch": 7,
+        "category" : "popular",
+        "research" : "Research and Thesis Papers",
+        "event" : "College event information",
+        "sport" : "Sports Club & Activity"
+    }
+]

@@ -1,6 +1,5 @@
 [
     {
-        "_id": "642c155b2c4774f05c36ee9e",
         "collegeName": "Notre Dem College",
         "collegeImg": "https://th.bing.com/th/id/R.2bacf0a9d6a5f0f656d4143c3a7ab30d?rik=M36%2b8VeQshYb3g&pid=ImgRaw&r=0",
         "admissionDate": "14 June 2023",
@@ -22,7 +21,6 @@
         "sport" : "Sports Club & Activity"
     },
     {
-        "_id": "642c155b2c4774f05c36eea6",
         "collegeName": "Dhaka College",
         "collegeImg": "https://th.bing.com/th/id/OIP.ofN8Gxvg-z6hy4jrEpqJdgAAAA?pid=ImgDet&rs=1",
         "admissionDate": "28 June 2023",
@@ -44,7 +42,6 @@
         "sport" : "Sports Club & Activity"
     },
     {
-        "_id": "642c155b2c4774f05c36eeaf",
         "collegeName": "Bangla College",
         "collegeImg": "https://th.bing.com/th/id/OIP.RFGswpVg7V_LTszXj5b2eAHaEK?pid=ImgDet&rs=1",
         "admissionDate": "14 June 2023",

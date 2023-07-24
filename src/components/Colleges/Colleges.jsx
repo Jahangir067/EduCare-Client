@@ -25,7 +25,7 @@ const Colleges = () => {
               <p>Rating: {college.rating}</p>
               <hr />
               <p>Number Of Research: {college.numOfResearch}</p> <br />
-              <button className="btn btn-primary w-full"><Link to="/colleges">Details</Link></button>
+              <button className="btn btn-primary w-full"><Link to="">Details</Link></button>
             </div>
           </div>)
         }

@@ -1,59 +1,23 @@
-import { useContext, useState } from "react";
-import { AuthContext } from "../../provider/AuthProvider";
-import { Link, useNavigate } from "react-router-dom";
+
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
+import { Link} from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+
 
 
 const SignUp = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const {createuser} = useContext(AuthContext);
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm();
-    const [passwordMatchError, setPasswordMatchError] = useState(false);
-    const {createuser, updateUserProfile} = useContext(AuthContext);
-    const navigate = useNavigate();
+  const onSubmit = data => {
+    createuser(data.email, data.password)
+    .then(result => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+    })
+    }
 
-    const onSubmit = data => {
-        createuser(data.email, data.password)
-        .then(result => {
-            const loggedUser = result.user;
-            console.log(loggedUser);
-            updateUserProfile(data.name, data.photoURL)
-            .then( () => {
-                const saveUser = {name: data.name, email: data.email}
-                   fetch('https://brain-hub-server.vercel.app/users', {
-                    method: 'POST',
-                    headers: {
-                      'content-type': 'application/json'
-                    },
-                    body: JSON.stringify(saveUser)
-                   })
-                   .then(res => res.json())
-                   .then(data => {
-                    if(data.insertedId){
-                      reset();
-                      Swal.fire({
-                        title: 'Success',
-                        showClass: {
-                          popup: 'animate__animated animate__fadeInDown'
-                        },
-                        hideClass: {
-                          popup: 'animate__animated animate__fadeOutUp'
-                        }
-                      })
-                      navigate('/');
-                    }
-                   })
-                 
-            })
-            .catch(error => console.log(error))    
-        })
-        if (data.password !== data.password2) {
-            setPasswordMatchError(true);
-            return;
-        }
-
-        console.log(data)
-    };
 
     return (
         <>
@@ -93,13 +57,19 @@ const SignUp = () => {
 
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Confirm Password</span>
+            <span className="label-text">Address</span>
           </label>
-          <input type="password" {...register("password2", { required: true })} name="password2" placeholder="Confirm Password" className="input input-bordered" />
-          {errors.password2 && <span className="text-red-500">Password is required</span>}
-          {passwordMatchError && (
-              <span className="text-red-500">Passwords do not match</span>
-            )}
+          <input type="text" {...register("address", { required: true })} name="address" placeholder="Type Your Address" className="input input-bordered" />
+          {errors.name && <span className="text-red-500">Name is required</span>}
+        </div>
+
+
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">College</span>
+          </label>
+          <input type="text" {...register("college", { required: true })} name="college" placeholder="Type Your College" className="input input-bordered" />
+          {errors.name && <span className="text-red-500">Name is required</span>}
         </div>
 
         <div className="form-control">

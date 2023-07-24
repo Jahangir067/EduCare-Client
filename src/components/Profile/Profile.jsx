@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   RiProfileFill,
   RiMailFill,
   RiBuildingFill,
   RiMapPinFill,
 } from "react-icons/ri";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Profile = () => {
   const [name, setName] = useState("Jahangir Alam");
@@ -16,9 +17,14 @@ const Profile = () => {
     "Govt. Bangla College"
   );
 
+  const {user} = useContext(AuthContext)
+  console.log(user)
+
   const handleEditProfile = () => {
     // Implement your logic to update the profile here
     // For simplicity, let's just console.log the new values
+
+    
     console.log("Updated Profile Info:");
     console.log("Name:", name);
     console.log("Email:", email);
@@ -40,11 +46,11 @@ const Profile = () => {
 
           <div className="flex gap-3 items-center my-4">
             <RiProfileFill className="text-[#007E70] text-2xl" />
-            <h2 className="font-bold text-xl">Name: {name}</h2>
+            <h2 className="font-bold text-xl">Name: {user?.displayName}</h2>
           </div>
           <div className="flex gap-3 items-center my-4">
             <RiMailFill className="text-[#007E70] text-2xl" />
-            <h2 className="font-bold text-xl">Email: {email}</h2>
+            <h2 className="font-bold text-xl">Email: {user?.email}</h2>
           </div>
           <div className="flex gap-3 items-center my-4">
             <RiMapPinFill className="text-[#007E70] text-2xl" />

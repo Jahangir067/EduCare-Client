@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const FeatureCollege = () => {
     const [colleges] = useColleges();
+    
     const featureColleges = colleges.filter(college => college.category === 'popular')
     return (
         <div>
@@ -28,7 +29,7 @@ const FeatureCollege = () => {
               <p>{college.event}</p>
               <hr />
               <p>{college.sport}</p>
-              <button className="btn btn-primary w-full"><Link to="/details">Details</Link></button>
+              <button className="btn btn-primary w-full"><Link to={`/details/${college._id}`}>Details</Link></button>
             </div>
           </div>)
         }
